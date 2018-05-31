@@ -1,8 +1,34 @@
 import {View, Text, Image, ScrollView, TouchableOpacity, KeyboardAvoidingView} from 'react-native';
 import React, {Component} from 'react';
 import styles from "../themes/styles";
+import PushNotification from 'react-native-push-notification';
 
 class App extends Component {
+
+    componentWillMount() {
+        /*PushNotification.configure({
+            onRegister: function(token) {
+                alert( 'TOKEN:', token );
+            },
+
+            onNotification: function(notification) {
+                notification.finish(PushNotificationIOS.FetchResult.NoData);
+            },
+            permissions: {
+                alert: true,
+                badge: true,
+                sound: true
+            },
+            popInitialNotification: true,
+            requestPermissions: true,
+        });*/
+
+        /*PushNotification.localNotificationSchedule({
+            message: "My Notification Message", // (required)
+            date: new Date(Date.now() + (30 * 1000)) // in 60 secs
+        });*/
+    }
+
     render() {
         return (
 
